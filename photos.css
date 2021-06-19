@@ -1,0 +1,17 @@
+
+.container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    gap: 2%;
+}
+
+.size
+{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
