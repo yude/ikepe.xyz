@@ -1,9 +1,15 @@
-/*URLの青字を消す*/
+/*URLの下線を消し、黒字にする*/
 
-a {
-    text-decoration: none;
-  }
+.URL
+{
+  text-decoration: none;
+  color: black;
+
   
-  a:hover {
-    text-decoration: underline;
-  }
+}
+
+.link
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
