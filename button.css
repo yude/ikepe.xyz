@@ -1,3 +1,5 @@
+/*ボタン調整用*/
+
 .button a {
     display: flex;
     grid-template-columns: 1fr 1fr ;
@@ -17,13 +19,13 @@
     content: '';
     width: 5px;
     height: 5px;
-    border-top: 3px solid #26C6DA;
-    border-right: 3px solid #26C6DA;
+    border-top: 3px solid #00838F;
+    border-right: 3px solid #00838F;
     transform: rotate(45deg);
   }
   
   .button a:hover {
-    color: #333333;
+    color: #566168;
     text-decoration: none;
     background-color: #a0c4d3;
   }
