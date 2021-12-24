@@ -1,0 +1,7 @@
+footer{
+    margin:0 auto;
+    height:60px;
+    line-height:60px;
+    position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+}
