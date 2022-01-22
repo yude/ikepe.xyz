@@ -1,34 +1,7 @@
-.button03 a {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1em 2em;
-    width: 20%;
-    margin: 10px auto;
-    color: #2285b1;
-    font-size: 18px;
-    font-weight: 700;
-    border: 2px solid #2285b1;
-    border-radius: 40px;
-}
+.font-main {
+    padding: 2px;
+  }
   
-.button03 a::after {
-    content: '';
-    width: 5px;
-    height: 5px;
-    border-top: 3px solid #2285b1;
-    border-right: 3px solid #2285b1;
-    transform: rotate(45deg);
-}
-  
-.button03 a:hover {
-    color: #333333;
-    text-decoration: none;
-    background-color: #a0c4d3;
-}
-  
-.button03 a:hover::after {
-    border-top: 3px solid #333333;
-    border-right: 3px solid #333333;
-}
+  #btn1 {
+    margin-bottom: 4px;
+  }
