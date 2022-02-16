@@ -2,53 +2,68 @@
 https://rico-notes.com/programming/html/header-design/
 */
 
+
 /*body*/
-body{
-    padding-top: 6%;
+
+body {
+    padding-top: 10%;
 }
+
 
 /*背景部分*/
-header{
+
+header {
     width: 100%;
-    height:6%;
+    height: 6%;
     padding: 10px 10px 10px 10px;
-    background-color:rgba(256,256,256,0.8);
+    background-color: rgba(256, 256, 256, 0.2);
+    box-sizing: border-box;
     position: fixed;
     top: 0;
+    left: 0;
     display: flex;
     align-items: center;
+    border-radius: 0 0 15px 15px;
 }
 
+
 /*ロゴ*/
-.logo{
+
+.logo {
     margin: 0;
     padding: 0;
     font-size: 25px;
 }
 
+
 /*ナビメニュー*/
-.header-menu{
-    text-align:right;
+
+.header-menu {
+    text-align: right;
     list-style: none;
     margin: 0 0 0;
     display: flex;
 }
-  
-li{
+
+li {
     margin: 0 0 0 50px;
     font-size: 18px;
 }
-  
-nav{
+
+nav {
     margin: 0 5% 0 auto;
 }
 
+
 /*下線*/
-.gnavi li a{
+
+.gnavi li a {
     position: relative;
+    color: white;
 }
+
 .gnavi li.current a,
-.gnavi li a::hover{
+.gnavi li a::hover {
     color: #000000;
 }
 
@@ -63,11 +78,11 @@ nav{
     background: #696969;
     /*アニメーションの指定*/
     transition: all .3s;
-    transform: scale(0,1);
+    transform: scale(0, 1);
     transform-origin: center top;
 }
 
 .gnavi li.current a::after,
-.gnavi li a:hover::after{
-    transform: scale(1,1);
+.gnavi li a:hover::after {
+    transform: scale(1, 1);
 }
