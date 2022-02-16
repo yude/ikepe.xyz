@@ -1,6 +1,7 @@
-body{
-    background-color: black;
-    background-image:url('/photos/miyajima.JPG');
+.bp{
+    /*background-image:url('/photos/miyajima.JPG');*/
+    width: 100%;
+    top: 0;
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
