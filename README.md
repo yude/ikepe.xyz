@@ -1,3 +1,3 @@
 # ikepe.xyz
 
-this is my web site
+https://ikepe.xyz
