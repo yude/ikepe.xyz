@@ -5,3 +5,10 @@ footer{
     position: absolute;/*←絶対位置*/
     bottom: 0; /*下に固定*/
 }
+
+/***mobile***/
+@media screen and (max-width:900px) {
+    h1{
+        font-size: large;
+    }
+}
