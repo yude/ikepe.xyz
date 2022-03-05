@@ -7,9 +7,9 @@
         <!--favicon-->
         <link rel="icon" href="icon/favicon.ico" sizes="128*128">
         <!--CSS-->
-        <link rel = "stylesheet" href = "css/URL-tool.css">
         <link rel = "stylesheet" href = "css/button.css">
         <link rel = "stylesheet" href = "css/header.css">
+        <link rel = "stylesheet" href = "css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
         <title>いけぺ～のホームページ</title>
         <link rel=”alternate” media=”only screen and (max-width: 640px)” href=”http://www.ikepe.xyz/s/” />
@@ -20,13 +20,18 @@
     <body>
         <header>
             <h1 class="logo">
-                <a href = "index.html"style="text-decoration:none;"><font color="#000000">いけぺ～のホームページ</font></a>
+                <a href = "index.html" class="URL">いけぺ～のホームページ</a>
             </h1>
-            <nav>
-                <ul class="header-menu gnavi">
-                    <li><a href="profile.html" class="URL current">about me</a></li>
-                    <li><a href = "https://ikepeblog.wordpress.com/" class="URL current" target="_blank">blog</a></li>
-                    <li><a href = "photos.html" class="URL current">photos</a></li>
+    
+            <!--ハンバーガーメニュ-->
+            <input id="drawer_input" class="drawer_hidden" type="checkbox">
+            <label for="drawer_input" class="drawer_open"><span></span></label>
+    
+            <nav class="nav_content">
+                <ul class="nav_list">
+                    <li><a href="profile.html" class="URL nav_item">about me</a></li>
+                    <li><a href = "https://ikepeblog.wordpress.com/" class="URL nav_item" target="_blank">blog</a></li>
+                    <li><a href = "photos.html" class="URL nav_item">photos</a></li>
                 </ul>
             </nav>
         </header>
