@@ -1,24 +1,36 @@
-/***mobile***/
-@media screen and (max-width:900px) {
+/*背景部分*/
+header {
+    width: 100%;
+    background-color: rgba(256, 256, 256, 0.2);
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+}
 
-    /*body*/
+/* チェックボックスを非表示にする */
+.drawer_hidden {
+    display: none;
+}
+
+/* メニュー黒ポチを消す */
+.nav_list {
+    list-style: none;
+}
+
+/***mobile***/
+@media screen and (max-width:500px) {
     body {
-        padding-top: 10%;
+        padding-top: 12%;
     }
 
     /*背景部分*/
     header {
-        width: 100%;
-        height: 6%;
-        padding: 10px 10px 10px 10px;
-        background-color: rgba(256, 256, 256, 0.2);
-        box-sizing: border-box;
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        border-radius: 0 0 20px 20px;
+        height: 8%;
+        padding: 10px 0px 10px 10px;
     }
 
     /*ロゴ*/
@@ -29,10 +41,6 @@
 
     /***ハンバーガーメニュー***/
     /*https://web-camp.io/magazine/archives/88361*/
-    /* チェックボックスを非表示にする */
-    .drawer_hidden {
-        display: none;
-    }
 
     /* ハンバーガーアイコンの設置スペース */
     .drawer_open {
@@ -56,17 +64,15 @@
         height: 3px;
         width: 25px;
         border-radius: 3px;
-        background: #333;
+        background: #696969;
         transition: 0.5s;
         position: absolute;
     }
 
-    /* 三本線の一番上の棒の位置調整 */
+    /* 三本線の位置調整 */
     .drawer_open span:before {
         bottom: 8px;
     }
-
-    /* 三本線の一番下の棒の位置調整 */
     .drawer_open span:after {
         top: 8px;
     }
@@ -101,11 +107,6 @@
         padding-top: 20px;
     }
 
-    /* メニュー黒ポチを消す */
-    .nav_list {
-        list-style: none;
-    }
-
     .nav_item a {
         color: #ffffff;
     }
@@ -123,26 +124,15 @@
 }
 
 /***PC***/
-@media screen and (min-width:901px) {
-
-    /*body*/
+@media screen and (min-width:501px) {
     body {
         padding-top: 10%;
     }
 
     /*背景部分*/
     header {
-        width: 100%;
-        height: 6%;
-        padding: 10px 10px 10px 10px;
-        background-color: rgba(256, 256, 256, 0.2);
-        box-sizing: border-box;
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        border-radius: 0 0 20px 20px;
+        height: 8%;
+        padding: 15px 30px 15px 30px;
     }
 
     /*ロゴ*/
@@ -151,15 +141,9 @@
         font-size-adjust: inherit;
     }
 
-    /* チェックボックスを非表示にする */
-    .drawer_hidden {
-        display: none;
-    }
-
     /*ナビメニュー*/
-    .header-menu {
+    .nav_list {
         text-align: right;
-        list-style: none;
         margin: 0 0 0;
         display: flex;
     }
@@ -171,37 +155,5 @@
 
     nav {
         margin: 0 5% 0 auto;
-    }
-
-
-    /*下線*/
-    .gnavi li a {
-        position: relative;
-        color: #000000;
-    }
-
-    .gnavi li.current a,
-    .gnavi li a::hover {
-        color: #000000;
-    }
-
-    .gnavi li a::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 10%;
-        /*線の形状*/
-        width: 90%;
-        height: 2px;
-        background: #696969;
-        /*アニメーションの指定*/
-        transition: all .3s;
-        transform: scale(0, 1);
-        transform-origin: center top;
-    }
-
-    .gnavi li.current a::after,
-    .gnavi li a:hover::after {
-        transform: scale(1, 1);
     }
 }
