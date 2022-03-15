@@ -1,30 +1,59 @@
 body {
-    font-family: 'Noto Sans JP';
+  font-family: 'Noto Sans JP';
 }
 
-footer{
-    margin:0 auto;
-    height:60px;
-    line-height:60px;
-    position: absolute;/*←絶対位置*/
-    bottom: 0; /*下に固定*/
+footer {
+  margin: 0 auto;
+  height: 60px;
+  line-height: 60px;
+  position: absolute;
+  /*←絶対位置*/
+  bottom: 0;
+  /*下に固定*/
 }
 
 /*URLの下線を消し、黒字にする*/
-.URL
-{
+.URL {
   text-decoration: none;
   color: black;
 }
-.link
-{
+
+.link {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
+/***PC***/
+@media screen and (min-width:901px) {
+  /*プロフ用*/
+  .prof-block {
+    margin-left: 30px;
+  }
+  .prof-title {
+    margin-top: 20px;
+  }
+  .prof-text {
+    margin-left: 5%;
+    border-left: thick solid #000000;
+    padding-left: 10px;
+  }
+}
+
 /***mobile***/
 @media screen and (max-width:900px) {
-    h1{
-        font-size: large;
-    }
+  h1 {
+    font-size: large;
+  }
+  /*プロフ用*/
+  .prof-block {
+    margin: 0 auto;
+  }
+  .prof-title {
+    margin-top: 20px;
+  }
+  .prof-text {
+    margin-left: 20px;
+    border-left: thick solid #000000;
+    padding-left: 10px;
+  }
 }
