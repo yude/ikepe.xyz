@@ -28,8 +28,12 @@ footer {
   
 }
 
+.mxgraph{
+  width: 100%;
+}
+
 /***PC***/
-@media screen and (min-width:451px) {
+@media screen and (min-width:901px) {
   /*プロフ用*/
   .prof-block {
     margin-left: 30px;
@@ -45,7 +49,7 @@ footer {
 }
 
 /***mobile***/
-@media screen and (max-width:450px) {
+@media screen and (max-width:900px) {
   h1 {
     font-size: large;
   }

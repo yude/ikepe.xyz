@@ -22,7 +22,7 @@ header {
 }
 
 /***mobile***/
-@media screen and (max-width:450px) {
+@media screen and (max-width:900px) {
     body {
         padding-top: 12%;
     }
@@ -37,6 +37,9 @@ header {
     .logo {
         width: 80%;
         font-size-adjust: inherit;
+    }
+
+    .logo-text{
     }
 
     /***ハンバーガーメニュー***/
@@ -124,7 +127,7 @@ header {
 }
 
 /***PC***/
-@media screen and (min-width:451px) {
+@media screen and (min-width:901px) {
     body {
         padding-top: 8%;
     }
