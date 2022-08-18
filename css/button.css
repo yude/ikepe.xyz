@@ -14,7 +14,8 @@
   border-radius: 40px;
 }
 
-@media screen and (min-width: 900px){
+/***PC***/
+@media screen and (min-width: 451px){
   .button a::after {
     content: '';
     width: 5px;

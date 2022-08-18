@@ -23,8 +23,13 @@ footer {
   grid-template-columns: 1fr 1fr;
 }
 
+/**devices.html**/
+.device-block{
+  
+}
+
 /***PC***/
-@media screen and (min-width:901px) {
+@media screen and (min-width:451px) {
   /*プロフ用*/
   .prof-block {
     margin-left: 30px;
@@ -40,7 +45,7 @@ footer {
 }
 
 /***mobile***/
-@media screen and (max-width:900px) {
+@media screen and (max-width:450px) {
   h1 {
     font-size: large;
   }
