@@ -25,7 +25,7 @@ footer {
 
 /**devices.html**/
 .device-block{
-  
+  margin-left: 50px;
 }
 
 .mxgraph{
@@ -53,6 +53,7 @@ footer {
   h1 {
     font-size: large;
   }
+  
   /*プロフ用*/
   .prof-block {
     margin: 0 auto;

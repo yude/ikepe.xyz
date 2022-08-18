@@ -1,14 +1,13 @@
 /*背景部分*/
 header {
     width: 100%;
-    background-color: rgba(256, 256, 256, 0.2);
+    background-color: rgba(256, 256, 256);
     box-sizing: border-box;
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
     align-items: center;
-    border-radius: 0 0 20px 20px;
 }
 
 /* チェックボックスを非表示にする */
@@ -24,19 +23,26 @@ header {
 /***mobile***/
 @media screen and (max-width:900px) {
     body {
-        padding-top: 12%;
+        /*ヘッダーと被るのを防ぐためにずらす*/
+        margin-top: 20%;
     }
 
     /*背景部分*/
     header {
+        z-index: 100;
         height: 8%;
-        padding: 10px 0px 10px 10px;
+        opacity: 1.0;
+        position: fixed;
+        /*ロゴを中心に持ってくるため左60px*/
+        padding: 10px 0px 0px 60px;
     }
 
     /*ロゴ*/
     .logo {
-        width: 80%;
-        font-size-adjust: inherit;
+        z-index: 150;
+        width: 100%;
+        text-align: center;
+        font-size: large;
     }
 
     .logo-text{
@@ -53,7 +59,7 @@ header {
         justify-content: center;
         align-items: center;
         position: relative;
-        z-index: 100;
+        z-index: 200;
         /* 重なり順を一番上にする */
         cursor: pointer;
     }
@@ -70,6 +76,7 @@ header {
         background: #696969;
         transition: 0.5s;
         position: absolute;
+        z-index: 50;
     }
 
     /* 三本線の位置調整 */
@@ -135,6 +142,7 @@ header {
     /*背景部分*/
     header {
         height: 8%;
+        opacity: 0.8;
         padding: 15px 30px 15px 30px;
     }
 
