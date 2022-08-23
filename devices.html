@@ -1,78 +1,76 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="uff-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!--favicon-->
-    <link rel="icon" href="icon/favicon.ico" sizes="128*128">
-    <!--CSS-->
-    <link rel="stylesheet" href="css/button.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>いけぺ～のホームページ</title>
-    <link rel=”alternate” media=”only screen and (max-width: 640px)” href=”http://www.ikepe.xyz/s/” />
+  <meta charset="uff-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!--favicon-->
+  <link rel="icon" href="icon/favicon.ico" sizes="128*128">
+  <!--CSS-->
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>いけぺ～のホームページ</title>
+  <link rel=”alternate” media=”only screen and (max-width: 640px)” href=”http://www.ikepe.xyz/s/” />
+  <!--JQuery-->
+  <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+  <!--JS-->
+  <script>
+    $(function () {
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+    });
+  </script>
 </head>
 
 <body>
-    <header>
-        <h1 class="logo">
-            <a href = "index.html" class="URL logo-text">いけぺ～のホームページ</a>
-        </h1>
+  <div id="header"></div>
 
-        <!--ハンバーガーメニュ-->
-        <input id="drawer_input" class="drawer_hidden" type="checkbox">
-        <label for="drawer_input" class="drawer_open"><span></span></label>
+  <p2>宅内環境</p2>
 
-        <nav class="nav_content">
-            <ul class="nav_list">
-                <li><a href="profile.html" class="URL nav_item">about me</a></li>
-                <li><a href = "https://ikepeblog.wordpress.com/" class="URL nav_item" target="_blank">blog</a></li>
-                <li><a href = "photos.html" class="URL nav_item">photos</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="mxgraph" style="max-width:100%;border:1px solid transparent;"
+    data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;lightbox&quot;:false,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers tags&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2022-08-17T15:28:23.194Z\&quot; agent=\&quot;5.0 (Windows)\&quot; etag=\&quot;i_CBIa84T1q4Z8X-tigI\&quot; version=\&quot;20.2.4\&quot; type=\&quot;google\&quot;&gt;&lt;diagram id=\&quot;x15_z5e_UAXCXHcx_7R5\&quot; name=\&quot;ページ1\&quot;&gt;7VtbV6s4FP41POoi3No+0ovOrFVPXdN6OY8pxJKREiYF286vnwRCgUCVai1Vx3WWJ9m57+/Lzs4OKvpgubmmMPRuiIt8RVPdjaIPFU0DwLTYf1yyzSR6L5UsKHaFLBdM8b9ICFUhjbGLVqWKESF+hMOy0CFBgJyoJIOUknW52hPxy6OGcIEqgqkD/ar0AbuRl0q7WieX/4HwwstGBpZY3xJmlcVKVh50ybog0keKPqCERGlquRkgn2sv00va7mpP6W5iFAVRkwaT58ktnFl/P47V+dTrhubsfn0henmBfiwWrGiWz/rru/iFJRc8qYy6Srej2LYyMpT+UOkNbgdZtTnd1RISNoNi23Tt0TZTKCVx4CI+J8CK1x6O0DSEDi9dMw4xmRctfVEsZodohDZ7lw12ymQ0RGSJIrplVUQDrWekTQQDTdNM8+scTpBh5BWgtIQMCgYtdl3nSmYJoecDdK410bkdhkxjjZVcaX/DtKLeQKdPyDNL2Zh+HcS6agmxHTqtIaY32iVC9ETYMosKtP6JSVZwsUosnM0qAC3cpM1EOTdPqVpz2T2iLgxgsVI62p+ToT2zX8U0nciBvDntKh5+XdiPzGZ2rv/SDpz5XpKqJyGpxFEdtM1RowlHb9CCoaCOrq8bqpUNzE5alumz4yvkQscnsfu2ijmEV3CJfa6gDP9ULA55oIn8gPiEJsPpavLzKQgZDQHqfhZAZgWgya+7j/H47JQMum1vA6vJNhijgLyQD5yuMw8Hz9MIRpgEXF8m0+dJjtf2EZf9KaPpxvo0yDs1kMtmLHBtfhlguYAEqKzT8pb7oIbRBkePvKtLU+R+i455ergpZrYik04XuZWbiIQJWxKJqYNe0YVZj10BG7MGmkxGkc8o/VKeRh1eYoRbghMvQVDDtMrWwFIlyNPpi1bFq4rUETAkswKkjiJIFyiqdJTQZ7fs9zOqe1aMCthiCpTi2d9ioCSTkyrJbQsUa5GJwmdOkTpXxgJ9jxt3MGOlg7Bi7T6Zsb0mx17/7urKHk+a3wVGutLVlH5PJGwjSST/RAKIRF/PKqtZ0ZVI9KwjHI1f0Rlq/2TM2Py/IfuAIes1NGR6q4ZM28O9gw1ZR7KIvdMaMlAXkWzdmwNF4u1oWE+9nOZFkhc4v4fmLVDWapOyuxB/Fph979mrSZQ1OiemrHaOlFUPoOwRqbfnhPxiFxDNeB+lGMZwW6gW8gqrV/aANI7ZNSWGpj0el6914WyJr2/4WlkwcLlZ8He/yzlcYeeSIicaQN8nceJI8jUCYPEkX57OU/OU6uP5kbw2SkQQRh9ecB+c+698GqkoIJSz7hi+nQGksIdade4M1axSW5c5eDzvrlHI9wEHLn8F1VR+tH7HiJQh+9166353NdZ7N4+DKGYyTbtUGXDqeDb9boo3W3+oA9Xwb654kCj+e6ncav3dCdSFXytWaIfCFFGmgMYhCAGa+j0tl2WdneWqC31WUJmEiD973CAX8+fEexj70c9A6AxMXDXUN0OB42F+puAg3lSjbd/x7JGBad8QZoMd8F3Pm+YP33r8tsg/s2C/ljjAP+WZcXd1O5uPgLS6yFQFsWtCFhzgA96DK32EeJN8RnmMwPmXAFuOnGs1l6sTg10X0/nwZoYuVwslyWUMM6P9UwA25Afd9ndzo8vzMXez/lPBPoPdXL2PfzLYj+OfgrZ8UJ8B2vu/AWv8VatV+ao1exI3lH5fsUfKyCq8e+tKb5Q9gHfyJ/F9X7RKiDPlR2VYVxElzyhDTLwYPGHfl0TQxwse6HQYWOxWrfc5lNiBvi0Klth1+TC1PDrqu8MxDIdZplJdjBWoNVTSD6cSy+Z/epFG1vO/YNFH/wE=&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}">
+  </div>
+  <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
 
-    <p2>宅内環境</p2>
-
-    <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;lightbox&quot;:false,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers tags&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2022-08-17T15:28:23.194Z\&quot; agent=\&quot;5.0 (Windows)\&quot; etag=\&quot;i_CBIa84T1q4Z8X-tigI\&quot; version=\&quot;20.2.4\&quot; type=\&quot;google\&quot;&gt;&lt;diagram id=\&quot;x15_z5e_UAXCXHcx_7R5\&quot; name=\&quot;ページ1\&quot;&gt;7VtbV6s4FP41POoi3No+0ovOrFVPXdN6OY8pxJKREiYF286vnwRCgUCVai1Vx3WWJ9m57+/Lzs4OKvpgubmmMPRuiIt8RVPdjaIPFU0DwLTYf1yyzSR6L5UsKHaFLBdM8b9ICFUhjbGLVqWKESF+hMOy0CFBgJyoJIOUknW52hPxy6OGcIEqgqkD/ar0AbuRl0q7WieX/4HwwstGBpZY3xJmlcVKVh50ybog0keKPqCERGlquRkgn2sv00va7mpP6W5iFAVRkwaT58ktnFl/P47V+dTrhubsfn0henmBfiwWrGiWz/rru/iFJRc8qYy6Srej2LYyMpT+UOkNbgdZtTnd1RISNoNi23Tt0TZTKCVx4CI+J8CK1x6O0DSEDi9dMw4xmRctfVEsZodohDZ7lw12ymQ0RGSJIrplVUQDrWekTQQDTdNM8+scTpBh5BWgtIQMCgYtdl3nSmYJoecDdK410bkdhkxjjZVcaX/DtKLeQKdPyDNL2Zh+HcS6agmxHTqtIaY32iVC9ETYMosKtP6JSVZwsUosnM0qAC3cpM1EOTdPqVpz2T2iLgxgsVI62p+ToT2zX8U0nciBvDntKh5+XdiPzGZ2rv/SDpz5XpKqJyGpxFEdtM1RowlHb9CCoaCOrq8bqpUNzE5alumz4yvkQscnsfu2ijmEV3CJfa6gDP9ULA55oIn8gPiEJsPpavLzKQgZDQHqfhZAZgWgya+7j/H47JQMum1vA6vJNhijgLyQD5yuMw8Hz9MIRpgEXF8m0+dJjtf2EZf9KaPpxvo0yDs1kMtmLHBtfhlguYAEqKzT8pb7oIbRBkePvKtLU+R+i455ergpZrYik04XuZWbiIQJWxKJqYNe0YVZj10BG7MGmkxGkc8o/VKeRh1eYoRbghMvQVDDtMrWwFIlyNPpi1bFq4rUETAkswKkjiJIFyiqdJTQZ7fs9zOqe1aMCthiCpTi2d9ioCSTkyrJbQsUa5GJwmdOkTpXxgJ9jxt3MGOlg7Bi7T6Zsb0mx17/7urKHk+a3wVGutLVlH5PJGwjSST/RAKIRF/PKqtZ0ZVI9KwjHI1f0Rlq/2TM2Py/IfuAIes1NGR6q4ZM28O9gw1ZR7KIvdMaMlAXkWzdmwNF4u1oWE+9nOZFkhc4v4fmLVDWapOyuxB/Fph979mrSZQ1OiemrHaOlFUPoOwRqbfnhPxiFxDNeB+lGMZwW6gW8gqrV/aANI7ZNSWGpj0el6914WyJr2/4WlkwcLlZ8He/yzlcYeeSIicaQN8nceJI8jUCYPEkX57OU/OU6uP5kbw2SkQQRh9ecB+c+698GqkoIJSz7hi+nQGksIdade4M1axSW5c5eDzvrlHI9wEHLn8F1VR+tH7HiJQh+9166353NdZ7N4+DKGYyTbtUGXDqeDb9boo3W3+oA9Xwb654kCj+e6ncav3dCdSFXytWaIfCFFGmgMYhCAGa+j0tl2WdneWqC31WUJmEiD973CAX8+fEexj70c9A6AxMXDXUN0OB42F+puAg3lSjbd/x7JGBad8QZoMd8F3Pm+YP33r8tsg/s2C/ljjAP+WZcXd1O5uPgLS6yFQFsWtCFhzgA96DK32EeJN8RnmMwPmXAFuOnGs1l6sTg10X0/nwZoYuVwslyWUMM6P9UwA25Afd9ndzo8vzMXez/lPBPoPdXL2PfzLYj+OfgrZ8UJ8B2vu/AWv8VatV+ao1exI3lH5fsUfKyCq8e+tKb5Q9gHfyJ/F9X7RKiDPlR2VYVxElzyhDTLwYPGHfl0TQxwse6HQYWOxWrfc5lNiBvi0Klth1+TC1PDrqu8MxDIdZplJdjBWoNVTSD6cSy+Z/epFG1vO/YNFH/wE=&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
-    <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
-
-    <div device-block>
-        <h2>自宅サーバ</h2>
-        <div device-list>
-            <p>MODEL : Lenovo ThinkStation P500</p>
-            <p>CPU : intel Xeon E5-2643 v3 6C12T</p>
-            <p>RAM : DDR4 ECC Registered 16GB *2</p>
-            <p>GPU1 : NVIDIA Quadro K2200</p>
-            <p>GPU2 : NVIDIA GeForce 210</p>
-            <p>SSD : 256GB+240GB</p>
-            <p>HDD : 500GB+4TB+4TB</p>
-            <p>OS : Proxmox VE 7.2</p>
-            <a href="https://mackerel.io/orgs/ikepe/hosts/4CewxBMjbyq/-/graphs/loadavg#period=10m"><img src="https://mackerel.io/embed/orgs/ikepe/hosts/4CewxBMjbyq.svg?graph=loadavg&amp;period=10m" height="200" width="400"></a>
-        </div>
-
-        <h2>自作PC</h2>
-        <div device-list>
-            <p>CASE : NZXT H1</p>
-            <p>CPU : AMD Ryzen5 3600 6C12T</p>
-            <p>RAM : DDR4 16GB *2</p>
-            <p>M/B : ASUS ROG STRIX B550-I GAMINIG</p>
-            <p>GPU2 : NVIDIA GeForce GTX 1080</p>
-            <p>SSD : 256GB+1TB</p>
-            <p>OS : Windows 10 pro</p>
-        </div>
-
-        <h2>ラップトップ</h2>
-        <div device-list>
-            <p>MODEL : apple MacBook Air</p>
-            <p>CPU : apple silicon M1</p>
-            <p>RAM : 8GB</p>
-            <p>SSD : 256GB</p>
-            <p>OS : MacOS Monterey 12.5</p>
-        </div>
-
+  <div device-block>
+    <h2>自宅サーバ</h2>
+    <div device-list>
+      <p>MODEL : Lenovo ThinkStation P500</p>
+      <p>CPU : intel Xeon E5-2643 v3 6C12T</p>
+      <p>RAM : DDR4 ECC Registered 16GB *2</p>
+      <p>GPU1 : NVIDIA Quadro K2200</p>
+      <p>GPU2 : NVIDIA GeForce 210</p>
+      <p>SSD : 256GB+240GB</p>
+      <p>HDD : 500GB+4TB+4TB</p>
+      <p>OS : Proxmox VE 7.2</p>
+      <a href="https://mackerel.io/orgs/ikepe/hosts/4CewxBMjbyq/-/graphs/loadavg#period=10m"><img
+          src="https://mackerel.io/embed/orgs/ikepe/hosts/4CewxBMjbyq.svg?graph=loadavg&amp;period=10m" height="200"
+          width="400"></a>
     </div>
+
+    <h2>自作PC</h2>
+    <div device-list>
+      <p>CASE : NZXT H1</p>
+      <p>CPU : AMD Ryzen5 3600 6C12T</p>
+      <p>RAM : DDR4 16GB *2</p>
+      <p>M/B : ASUS ROG STRIX B550-I GAMINIG</p>
+      <p>GPU2 : NVIDIA GeForce GTX 1080</p>
+      <p>SSD : 256GB+1TB</p>
+      <p>OS : Windows 10 pro</p>
+    </div>
+
+    <h2>ラップトップ</h2>
+    <div device-list>
+      <p>MODEL : apple MacBook Air</p>
+      <p>CPU : apple silicon M1</p>
+      <p>RAM : 8GB</p>
+      <p>SSD : 256GB</p>
+      <p>OS : MacOS Monterey 12.5</p>
+    </div>
+
+  </div>
 
 </body>
 

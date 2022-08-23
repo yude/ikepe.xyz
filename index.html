@@ -1,47 +1,42 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="uff-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!--favicon-->
-    <link rel="icon" href="icon/favicon.ico" sizes="128*128">
-    <!--SEO-->
-    <meta name="description" content="いけぺ～のホームページです。ぼちぼち更新していきます">
-    <!--CSS-->
-    <link rel="stylesheet" href="css/button.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>いけぺ～のホームページ</title>
-    <link rel=”alternate” media=”only screen and (max-width: 640px)” href=”http://www.ikepe.xyz/s/” />
+  <meta charset="uff-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!--favicon-->
+  <link rel="icon" href="icon/favicon.ico" sizes="128*128">
+  <!--SEO-->
+  <meta name="description" content="いけぺ～のホームページです。ぼちぼち更新していきます">
+  <!--CSS-->
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>いけぺ～のホームページ</title>
+  <link rel=”alternate” media=”only screen and (max-width: 640px)” href=”http://www.ikepe.xyz/s/” />
+  <!--JQuery-->
+  <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+  <!--JS-->
+  <script>
+    $(function () {
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+    });
+  </script>
 </head>
 
 <body>
-    <header>
-        <h1 class="logo">
-            <a href = "index.html" class="URL">いけぺ～のホームページ</a>
-        </h1>
+  <div id="header"></div>
 
-        <!--ハンバーガーメニュ-->
-        <input id="drawer_input" class="drawer_hidden" type="checkbox">
-        <label for="drawer_input" class="drawer_open"><span></span></label>
+  <div class="button">
+    <a href="profile.html" class="URL">profile</a>
+    <a href="devices.html" class="URL">devices</a>
+    <a href="photos.html" class="URL">photos</a>
+    <a href="https://ikepeblog.wordpress.com/" class="URL" target="_blank">blog</a>
+    <a href="mailto:pe@ikepe.xyz" class="URL">contact me</a>
+  </div>
 
-        <nav class="nav_content">
-            <ul class="nav_list">
-                <li><a href="profile.html" class="URL nav_item">about me</a></li>
-                <li><a href = "https://ikepeblog.wordpress.com/" class="URL nav_item" target="_blank">blog</a></li>
-                <li><a href = "photos.html" class="URL nav_item">photos</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="button">
-        <a href="profile.html" class="URL">profile</a>
-        <a href="devices.html" class="URL">devices</a>
-        <a href="photos.html" class="URL">photos</a>
-        <a href="https://ikepeblog.wordpress.com/" class="URL" target="_blank">blog</a>
-        <a href="mailto:pe@ikepe.xyz" class="URL">contact me</a>
-    </div>
 </body>
 
 </html>
