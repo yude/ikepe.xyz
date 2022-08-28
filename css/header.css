@@ -21,7 +21,6 @@ header {
 }
 
 /***mobile***/
-/****/
 @media screen and (max-width:900px) {
     body {
         /*ヘッダーと被るのを防ぐためにずらす*/
@@ -43,7 +42,7 @@ header {
         z-index: 110;
         width: 100%;
         text-align: center;
-        font-size: large;
+        font-size: 30px;
     }
 
     /***ハンバーガーメニュー***/
@@ -149,7 +148,7 @@ header {
 
     /*ロゴ*/
     .logo {
-        width: 40%;
+        width: 50%;
         font-size-adjust: inherit;
     }
 
