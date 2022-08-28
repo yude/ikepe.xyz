@@ -159,7 +159,7 @@ header {
         display: flex;
     }
 
-    li {
+    .nav_li {
         margin: 0 0 0 45px;
         font-size: 18px;
     }
