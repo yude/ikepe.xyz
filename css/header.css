@@ -21,6 +21,7 @@ header {
 }
 
 /***mobile***/
+/****/
 @media screen and (max-width:900px) {
     body {
         /*ヘッダーと被るのを防ぐためにずらす*/
@@ -39,13 +40,10 @@ header {
 
     /*ロゴ*/
     .logo {
-        z-index: 150;
+        z-index: 110;
         width: 100%;
         text-align: center;
         font-size: large;
-    }
-
-    .logo-text{
     }
 
     /***ハンバーガーメニュー***/
@@ -110,20 +108,23 @@ header {
         bottom: 100%;
         left: 0%;
         /* メニューを画面の外に飛ばす */
-        z-index: 99;
-        background: #808080e7;
+        z-index: 90;
+        background: rgba(250, 250, 250, 0.95);
         transition: .5s;
         text-align: center;
-        padding-top: 20px;
     }
 
     .nav_item a {
+        font-size: large;
         color: #ffffff;
     }
     
-    li{
+    .nav_li{
+        top: 10%;
         color: #ffffff;
-        height: 100px;
+        height: 70px;
+        /*ロゴを中心に持ってくるため左60px*/
+        padding: 60px 60px 0px 0px;
     }
 
     /* アイコンがクリックされたらメニューを表示 */
